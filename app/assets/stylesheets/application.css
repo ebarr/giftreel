@@ -28,12 +28,23 @@
       overflow: hidden;
       height: 45px;
 }
+.nav a {
+  text-decoration: none;
+}
+.nav a:visited {
+  text-decoration: none;
+  color: black;
+}
+.nav a:hover {
+  text-decoration: none;
+  background-color: lightgray;
+}
+
 
 .container {
   margin: 0 auto;
   max-width: 960px;
   width: 90%;
-
   }
 
 .works {
@@ -50,15 +61,10 @@
   background-color: lightgray;
 }
 
-/*.main h1{
-  margin-top: 50px;
-  }*/
-
 .main {
   position: relative;
   top: 50;
   padding: 180px 40px 100px;
-
 }
 .button {
     font-size: 14px;
@@ -76,8 +82,44 @@
   .button a:visited {
     color:white;
   }
+  .button a:hover {
+    background-color: darkblue;
   }
 
+  /*New Page*/
+  .new {
+    position: relative;
+    top: 50px;
+    border: solid 1px black;
+    text-align: center;
+  }
+
+  .form {
+    background-color: blue;
+  }
+
+ input {
+  background: #eee;
+  border: 2px solid #eee;
+  border-radius: 2px;
+ /* box-sizing: border-box;*/
+  height: 36px;
+  margin: 0;
+  padding: 0;
+  text-indent: 7px;
+  width: 100%;
+  }
+
+.actions input {
+  font-size: 14px;
+  height: 36px;
+  margin: 0;
+  border: 2px solid #eee;
+  padding: 0;
+  width: 60%;
+  background-color: darkblue;
+  color: white;
+}
 
  /* grid system*/
 .column {
@@ -101,6 +143,8 @@
   .column.third { width: 33.3%; }
   .column.fourth { width: 24.95%; }
   .column.flow-opposite { float: right; }
+  .threecol { width: 22.05%; min-height: 1px; position: relative;}
+  .sixcol { width: 48%; min-height: 1px; margin-right: 3.8%; position: relative; }
 }
 
 .clearfix:before,
